@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miquel Stam - Computer Science Student & Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="miquel-stam-headshot.jpg" alt="Miquel Stam" class="profile-img">
+                    <div class="status-indicator"></div>
+                </div>
+                <div class="profile-info">
+                    <h3 class="profile-name">Miquel Stam</h3>
+                    <p class="profile-title">Computer Science Student</p>
+                    <div class="profile-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Breda, Netherlands</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a></li>
+            <li><a href="#about" class="nav-link" data-section="about">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a></li>
+            <li><a href="#experience" class="nav-link" data-section="experience">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a></li>
+            <li><a href="#education" class="nav-link" data-section="education">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Education</span>
+            </a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">
+                <i class="fas fa-folder-open"></i>
+                <span>Projects</span>
+            </a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a></li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="mailto:mql.stam@gmail.com" class="social-link" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/mqlstam" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/miquelstam/" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Miquel Stam</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Computer Science Student & Developer</h2>
+                    <p class="hero-description">
+                        Passionate about leveraging AI tools and modern technologies to build innovative solutions.
+                        Currently studying at Avans Hogeschool Breda, combining analytical thinking with practical problem-solving.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-element" data-speed="0.5">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-element" data-speed="0.8">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <div class="floating-element" data-speed="0.3">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="floating-element" data-speed="0.6">
+                            <i class="fab fa-java"></i>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-title">portfolio.js</span>
+                        </div>
+                        <div class="code-content">
+                            <div class="code-line">
+                                <span class="keyword">const</span>
+                                <span class="variable">developer</span> = {
+                            </div>
+                            <div class="code-line indent">
+                                <span class="property">name</span>:
+                                <span class="string">'Miquel Stam'</span>,
+                            </div>
+                            <div class="code-line indent">
+                                <span class="property">skills</span>: [
+                                <span class="string">'AI'</span>,
+                                <span class="string">'Java'</span>,
+                                <span class="string">'C#'</span>],
+                            </div>
+                            <div class="code-line indent">
+                                <span class="property">passion</span>:
+                                <span class="string">'Innovation'</span>
+                            </div>
+                            <div class="code-line">};</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Who I Am</h3>
+                        <p>
+                            As a third-year Computer Science student at Avans Hogeschool Breda, I combine strong analytical thinking
+                            with practical problem-solving skills. My experience in customer-oriented roles has strengthened my
+                            communication abilities, helping me convey complex technical concepts clearly.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>My Focus</h3>
+                        <p>
+                            I focus particularly on using AI for software development, which I see as an essential skill for the future.
+                            I leverage cutting-edge AI tools including Claude Code, Claude, ChatGPT, Gemini, and Cursor to enhance my development workflow
+                            and create more efficient solutions.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Beyond Code</h3>
+                        <p>
+                            When I'm not coding, you'll find me exploring new technologies, playing guitar, singing, or staying active
+                            through fitness. I believe in continuous learning and staying curious about emerging trends in technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-icons">
+                            <div class="tech-icon" title="Java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="tech-icon" title="C#">
+                                <i class="fas fa-hashtag"></i>
+                                <span>C#</span>
+                            </div>
+                            <div class="tech-icon" title="JavaScript">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-icon" title="Azure">
+                                <i class="fab fa-microsoft"></i>
+                                <span>Azure</span>
+                            </div>
+                            <div class="tech-icon" title="SQL">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="tech-icon" title="AI Tools">
+                                <i class="fas fa-robot"></i>
+                                <span>AI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <h3>Interests</h3>
+                        <div class="interest-tags">
+                            <span class="tag"><i class="fas fa-guitar"></i> Guitar</span>
+                            <span class="tag"><i class="fas fa-microphone"></i> Singing</span>
+                            <span class="tag"><i class="fas fa-dumbbell"></i> Fitness</span>
+                            <span class="tag"><i class="fas fa-brain"></i> AI Research</span>
+                            <span class="tag"><i class="fas fa-book"></i> Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="section-header">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item active">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="company">Creetion, Breda</span>
+                            <span class="period">Sep 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Develop modern HR applications using React, TypeScript, and Node.js</li>
+                            <li>Build Progressive Web Apps (PWA) for internal business processes</li>
+                            <li>Implement full-stack solutions with MongoDB, Express.js, and Google APIs</li>
+                            <li>Work on car trip registration system to replace spreadsheet-based workflows</li>
+                            <li>Collaborate using modern development practices including Docker and CI/CD</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Sales Advisor</h3>
+                            <span class="company">KPN Experience Store, Breda</span>
+                            <span class="period">Dec 2022 - Present</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Advise customers on suitable phone and internet subscriptions</li>
+                            <li>Solve technical problems and provide customer support</li>
+                            <li>Achieve sales targets while ensuring excellent customer experience</li>
+                            <li>Collaborate with team members to maintain store efficiency</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Customer Service</span>
+                            <span class="skill-tag">Sales</span>
+                            <span class="skill-tag">Technical Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Application Administrator</h3>
+                            <span class="company">Willemsen Sport, Oosterhout NB</span>
+                            <span class="period">Aug 2020 - May 2022</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Managed technical requirements for users in the Willemsen Sport app</li>
+                            <li>Provided ICT advice to employees and customers</li>
+                            <li>Configured system functions and user permissions</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">System Administration</span>
+                            <span class="skill-tag">ICT Support</span>
+                            <span class="skill-tag">User Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Social Media Marketer</h3>
+                            <span class="company">Willemsen Sport, Oosterhout NB</span>
+                            <span class="period">Apr 2020 - Aug 2020</span>
+                        </div>
+                        <ul class="timeline-tasks">
+                            <li>Created campaigns to generate leads for sales team</li>
+                            <li>Managed social media accounts across platforms</li>
+                            <li>Coordinated content creation and publishing</li>
+                        </ul>
+                        <div class="timeline-skills">
+                            <span class="skill-tag">Digital Marketing</span>
+                            <span class="skill-tag">Content Creation</span>
+                            <span class="skill-tag">Lead Generation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card current">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>BSc Computer Science</h3>
+                        <p class="institution">Avans Hogeschool Breda</p>
+                        <p class="period">2022 - Present</p>
+                        <div class="status in-progress">In Progress</div>
+                        <p class="description">
+                            Software development and AI integration focus.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>BSc Mechanical Engineering</h3>
+                        <p class="institution">Avans Hogeschool Breda</p>
+                        <p class="period">2020 - 2022</p>
+                        <div class="status transitioned">Transitioned</div>
+                        <p class="description">
+                            Foundation in engineering principles and analytical thinking.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>HAVO</h3>
+                        <p class="institution">Mgr. Frencken College</p>
+                        <p class="period">2013 - 2019</p>
+                        <div class="status completed">Completed</div>
+                        <p class="description">
+                            Secondary education with focus on sciences and mathematics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Technical and personal capabilities</p>
+            </div>
+            <div class="skills-content">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-robot skill-icon"></i>
+                                    <span class="skill-name">Artificial Intelligence</span>
+                                </div>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-js-square skill-icon"></i>
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-react skill-icon"></i>
+                                    <span class="skill-name">React</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-java skill-icon"></i>
+                                    <span class="skill-name">Java</span>
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-hashtag skill-icon"></i>
+                                    <span class="skill-name">C# / ASP.NET</span>
+                                </div>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fab fa-microsoft skill-icon"></i>
+                                    <span class="skill-name">Azure</span>
+                                </div>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <i class="fas fa-database skill-icon"></i>
+                                    <span class="skill-name">SQL</span>
+                                </div>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soft-skills">
+                    <h3>Personal Qualities</h3>
+                    <div class="qualities-list">
+                        <div class="quality-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Creative Problem Solving</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-users"></i>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-comments"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Enthusiastic</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Analytical Thinking</span>
+                        </div>
+                        <div class="quality-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/mqlstam/MealReservationSystem" class="project-link" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-mockup">
+                            <div class="mockup-browser">
+                                <div class="browser-header">
+                                    <div class="browser-dots">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="app-interface">
+                                        <div class="app-header">Student Meal Reservation</div>
+                                        <div class="app-content">
+                                            <div class="meal-card"></div>
+                                            <div class="meal-card"></div>
+                                            <div class="meal-card"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Student Meal Reservation System</h3>
+                        </div>
+                        <p class="project-description">
+                            A full-stack application for meal reservations with dual database architecture,
+                            CI/CD pipeline, and both REST and GraphQL APIs for flexible data access.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ASP.NET Core</span>
+                            <span class="tech-tag">REST API</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                        </div>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li>Dual Azure SQL database architecture (Identity/Domain)</li>
+                                <li>Automated CI/CD pipeline with GitHub Actions</li>
+                                <li>Responsive frontend with MVC Core 8</li>
+                                <li>RESTful and GraphQL APIs</li>
+                            </ul>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/mqlstam/MealReservationSystem" class="btn btn-primary">
+                                <i class="fab fa-github"></i>
+                                <span>View Code</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>mql.stam@gmail.com</p>
+                            <a href="mailto:mql.stam@gmail.com" class="contact-action">Send Email</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Breda, Netherlands</p>
+                            <span class="contact-action">Available for opportunities</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-cta">
+                    <div class="cta-content">
+                        <h3>Ready to work together?</h3>
+                        <p>
+                            I'm always interested in discussing new opportunities, innovative projects,
+                            or just having a chat about technology and development.
+                        </p>
+                        <a href="mailto:mql.stam@gmail.com" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Start a Conversation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgress"></div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
